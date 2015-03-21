@@ -1,5 +1,4 @@
-project {
-    modelVersion '4.0.0'
+project(modelVersion: '4.0.0') {
 
     groupId 'com.devskiller.maven'
     artifactId 'sample-groovy-maven'
