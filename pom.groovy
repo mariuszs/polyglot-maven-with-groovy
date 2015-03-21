@@ -12,7 +12,7 @@ project(modelVersion: '4.0.0') {
         dependency(groupId: 'org.codehaus.groovy', artifactId: 'groovy-all', version: '2.4.2', classifier: 'indy')
         dependency(groupId: 'org.spockframework', artifactId: 'spock-core', version: '1.0-groovy-2.4') {
             exclusions {
-                exclusion(groupId: 'org.codehaus.groovy', artifactId: 'groovy-all')
+                exclusion groupId: 'org.codehaus.groovy', artifactId: 'groovy-all'
             }
         }
     }
