@@ -10,7 +10,8 @@ project {
     }
     
     dependencies {
-        dependency(groupId: 'org.codehaus.groovy', artifactId: 'groovy-all', version: '2.4.2', classifier: 'indy')
+        dependency(groupId: 'org.codehaus.groovy', artifactId: 'groovy-all', version: '2.4.2')
+        dependency(groupId: 'org.spockframework', artifactId: 'spock-core', version: '1.0-groovy-2.4')
     }
 
     build {
@@ -26,6 +27,13 @@ project {
                 }
                 configuration {
                     invokeDynamic(true)
+                }
+            }
+            plugin(artifactId: 'maven-surefire-plugin', version: '2.18.1'){
+                configuration {
+                    includes {
+                        include('**/*Spec.java')
+                    }
                 }
             }
         }
