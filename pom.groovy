@@ -5,7 +5,7 @@ project(modelVersion: '4.0.0') {
     version '1.0-SNAPSHOT'
 
     properties {
-        'project.build.sourceEncoding'('UTF-8')
+        'project.build.sourceEncoding' 'UTF-8'
     }
 
     dependencies {
@@ -30,13 +30,13 @@ project(modelVersion: '4.0.0') {
                     }
                 }
                 configuration {
-                    invokeDynamic(true)
+                    invokeDynamic true
                 }
             }
             plugin(artifactId: 'maven-surefire-plugin', version: '2.18.1') {
                 configuration {
                     includes {
-                        include('**/*Spec.java')
+                        include '**/*Spec.java'
                     }
                 }
             }
