@@ -25,9 +25,6 @@ project {
                         }
                     }
                 }
-                configuration {
-                    invokeDynamic(true)
-                }
             }
             plugin(artifactId: 'maven-surefire-plugin', version: '2.18.1'){
                 configuration {
