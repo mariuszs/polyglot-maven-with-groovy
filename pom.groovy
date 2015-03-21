@@ -14,10 +14,7 @@ project {
         dependency(groupId: 'org.spockframework', artifactId: 'spock-core', version: '1.0-groovy-2.4') {
             exclusions {
                 // We do not want normal groovy without Invoke Dynamic
-                exclusion {
-                    groupId('org.codehaus.groovy')
-                    artifactId('groovy-all')
-                }
+                exclusion(groupId: 'org.codehaus.groovy', artifactId: 'groovy-all')
             }
         }
     }
